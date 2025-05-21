@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia documental per recerques amb dades personals</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Barra de navegació -->
+    <nav class="navbar navbar navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-card-list"></i> Guia documental per recerques amb dades personals
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Elements del menú -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Introducció</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pladades.html">Pla de dades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="consentiment.html">Documentació necessària</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contingut principal -->
+    <div class="container">
+        <div class="row">
+
+            <!-- Esquerra -->
+            <div class="col-md-3 mt-4">
+
+                <!-- Accés ràpid -->
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <i class="bi bi-list-check"></i> Accés ràpid
+                    </div>
+                    <div class="accordion" id="navAccordion">
+                        <!-- Introducció -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <a href="index.html" class="accordion-button" style="text-decoration: none; color: inherit; font-weight: normal; background-color: #e9ecef;">
+                                    <i class="bi bi-folder me-2"></i> Introducció
+                                </a>
+                            </h2>
+                        </div>
+                    
+                        <!-- Pla de Dades -->
+                        <div class="accordion-item" style="background-color: #e9ecef;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" disabled>
+                                    <i class="bi bi-clipboard-data me-2"></i> Pla de Dades
+                                </button>
+                            </h2>
+                            <div id="plaCollapse" class="accordion-collapse show">
+                                <div class="list-group list-group-flush">
+                                    <a href="#pla" class="list-group-item list-group-item-action">
+                                        Pla de dades
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Documentació -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <a href="consentiment.html" class="accordion-button" style="text-decoration: none; color: inherit; font-weight: normal; background-color: #e9ecef;">
+                                    <i class="bi bi-folder me-2"></i> Documentació necessària
+                                </a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recursos -->
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <i class="bi bi-book"></i> Recursos
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="https://www.aepd.es/"><i class="bi bi-link-45deg"></i> Agencia Espanyola Protecció Dades</a></li>
+                            <li class="mb-2"><a href="https://www.ub.edu/comissiobioetica/es"><i class="bi bi-link-45deg"></i> Comissió de Bioética de la UB</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Centre -->
+            <div class="col-md-9 mt-4">
+            
+                <!-- Secció Pla de dades -->
+                <section id="pla" class="mb-5">
+                    <div class="card info-card">
+                        <div class="card-body">
+                            <h2><i class="bi bi-database"></i> Pla de dades</h2>
+                            <p>En pla de dades s’ha d’explicar com s’organitzaran i descriuran les dades, com es gestionaran, els requisits legals i ètics de la protecció de dades, on s'emmagatzemaran les dades, com es compartiran les dades i com es gestionaran les dades personals i con es tractaran (qui ho gestionarà i que necessita)</p>
+                            <p><strong>El pla de dades ha de contenir la següent informació: </strong></p>
+                            <div class="accordion mt-4">
+                                
+                                <!-- 1. Informació bàsica -->
+                                <div class="accordion-item">
+                                    <button class="accordion-button collapsed bg-light text-start flex-column align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#sec1" aria-expanded="false" aria-controls="sec1">
+                                        <span class="fw-bold">1. Informació bàsica</span>
+                                        <small class="text-muted">Aquesta secció inclou les dades identificatives de la recerca.</small>
+                                    </button>
+                                    <div id="sec1" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Nom complet de la recerca</li>
+                                                <li>Nom i cognoms de l'investigador/a principal</li>
+                                                <li>Dades de contacte (telèfon i correu electrònic)</li>
+                                                <li>Institució o centre de recerca</li>
+                                                <li>Data d'elaboració del pla</li>
+                                                <li>Versió del Pla de Gestió de Dades</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- 2. Tipus i format de dades -->
+                                <div class="accordion-item">
+                                    <button class="accordion-button collapsed bg-light text-start flex-column align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#sec2" aria-expanded="false" aria-controls="sec1">
+                                        <span class="fw-bold">2. Tipus i format de dades</span>
+                                        <small class="text-muted">Descripció de les dades que es recolliran o generaran durant la recerca:</small>
+                                    </button>
+                                    <div id="sec2" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Tipus de dades (qualitatives, quantitatives, imatges, etc.)</li>
+                                                <li>Formats en què es guardaran (CSV, Excel, SPSS, JPEG, etc.)</li>
+                                                <li>Mètodes de recollida o producció de dades</li>
+                                                <li>Existència de dades personals i mesures per garantir el compliment legal i ètic</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- 3. Gestió d'emmagatzematge durant la recerca -->
+                                <div class="accordion-item">
+                                    <button class="accordion-button collapsed bg-light text-start flex-column align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#sec3" aria-expanded="false" aria-controls="sec1">
+                                        <span class="fw-bold">3. Gestió d'emmagatzematge durant la recerca</span>
+                                        <small class="text-muted">Estratègies per a l'emmagatzematge i accés a les dades durant el desenvolupament de la recerca:</small>
+                                    </button>
+                                    <div id="sec3" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Sistemes d'emmagatzematge utilitzats (servidors institucionals, unitats de disc, núvol)</li>
+                                                <li>Controls d'accés i permisos</li>
+                                                <li>Mides de seguretat per a dades personals o sensibles</li>
+                                                <li>Protocols de còpia de seguretat</li>
+                                                <li>Procediments de pseudonimització o anonimització quan correspongui</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- 4. Preservació a llarg termini -->
+                                <div class="accordion-item">
+                                    <button class="accordion-button collapsed bg-light text-start flex-column align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#sec4" aria-expanded="false" aria-controls="sec1">
+                                        <span class="fw-bold">4. Preservació a llarg termini</span>
+                                        <small class="text-muted">Pla per a la conservació de les dades un cop finalitzada la recerca:</small>
+                                    </button>
+                                    <div id="sec4" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Destinació final de les dades (repositoris institucionals, etc.)</li>
+                                                <li>Política d'accés i restriccions</li>
+                                                <li>Repositoris certificats on es podran dipositar les dades</li>
+                                                <li>Termini mínim de preservació (10 anys o més)</li>
+                                                <li>Dades que seran eliminades i mètodes de destrucció segura</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- 5. Compliment legal i ètic -->
+                                <div class="accordion-item">
+                                    <button class="accordion-button collapsed bg-light text-start flex-column align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#sec5" aria-expanded="false" aria-controls="sec1">
+                                        <span class="fw-bold">5. Compliment legal i ètic</span>
+                                        <small class="text-muted">Aspectes normatius i ètics relacionats amb la gestió de dades:</small>
+                                    </button>
+                                    <div id="sec5" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Aplicació dels principis FAIR (Localitzables, Accessibles, Interoperables, Reutilitzables)</li>
+                                                <li>Gestió de riscos de pèrdua o accés no autoritzat</li>
+                                                <li>Protecció de dades personals d'acord amb el Reglament General de Protecció de Dades</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- 6. Revisió i actualització -->
+                                <div class="accordion-item">
+                                    <button class="accordion-button collapsed bg-light text-start flex-column align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#sec6" aria-expanded="false" aria-controls="sec1">
+                                        <span class="fw-bold">6. Revisió i actualització</span>
+                                        <small class="text-muted">El pla de dades és un document viu que requereix actualitzacions periòdiques:</small>
+                                    </button>
+                                    <div id="sec6" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Freqüència de revisió del pla</li>
+                                                <li>Procediment per a incorporar canvis normatius</li>
+                                                <li>Adaptació a nous riscos o amenaces identificades</li>
+                                                <li>Control de versions i registre de canvis</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <!-- 7. Pressupost i recursos -->
+                                <div class="accordion-item">
+                                    <button class="accordion-button collapsed bg-light text-start flex-column align-items-start" type="button" data-bs-toggle="collapse" data-bs-target="#sec7" aria-expanded="false" aria-controls="sec1">
+                                        <span class="fw-bold">7. Pressupost i recursos</span>
+                                        <small class="text-muted">Recursos assignats per a la gestió de dades:</small>
+                                    </button>
+                                    <div id="sec7" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li>Costos d'emmagatzematge i infraestructura</li>
+                                                <li>Subscripcions a repositoris o serveis externs</li>
+                                                <li>Recursos humans dedicats a la gestió de dades</li>
+                                                <li>Formació necessària per al personal</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card mt-4">
+                                <div class="card-body bg-light">
+                                    <h5><i class="bi bi-tools"></i> Eines per crear el teu pla de dades</h5>
+                                    <p>Pots accedir a fer el teu propi model dins de: <br><small>(Sempre que la teva institució hi tingui els permisos)</small></p>
+                                    <ul>
+                                        <li><a href="https://pgd.consorciomadrono.es/" target="_blank">https://pgd.consorciomadrono.es/</a></li>
+                                        <li><a href="https://dmponline.dcc.ac.uk/" target="_blank">https://dmponline.dcc.ac.uk/</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

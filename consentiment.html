@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia documental per recerques amb dades personals</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Barra de navegació -->
+    <nav class="navbar navbar navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-card-list"></i> Guia documental per recerques amb dades personals
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Elements del menú -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Introducció</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pladades.html">Pla de dades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="consentiment.html">Documentació necessària</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contingut principal -->
+    <div class="container">
+        <div class="row">
+
+            <!-- Esquerra -->
+            <div class="col-md-3 mt-4">
+
+                <!-- Accés ràpid -->
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <i class="bi bi-list-check"></i> Accés ràpid
+                    </div>
+                    <div class="accordion" id="navAccordion">
+                        <!-- Introducció -->
+                        <!-- Pla de Dades -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <a href="index.html" class="accordion-button" style="text-decoration: none; color: inherit; font-weight: normal; background-color: #e9ecef;">
+                                    <i class="bi bi-clipboard-data me-2"></i> Introducció
+                                </a>
+                            </h2>
+                        </div>
+                    
+                        <!-- Pla de Dades -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <a href="pladades.html" class="accordion-button" style="text-decoration: none; color: inherit; font-weight: normal; background-color: #e9ecef;">
+                                    <i class="bi bi-clipboard-data me-2"></i> Pla de Dades
+                                </a>
+                            </h2>
+                        </div>
+                    
+                        <!-- Documentació -->
+                        <div class="accordion-item" style="background-color: #e9ecef;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" disabled>
+                                    <i class="bi bi-folder me-2"></i> Documentació necessària
+                                </button>
+                            </h2>
+                            <div id="docCollapse" class="accordion-collapse show">
+                                <div class="list-group list-group-flush">
+                                    <a href="#informatiu" class="list-group-item list-group-item-action">
+                                        Full informatiu
+                                    </a>
+                                    <a href="#consentiment-informat" class="list-group-item list-group-item-action">
+                                        Consentiment informat i explícit
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recursos -->
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <i class="bi bi-book"></i> Recursos
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="https://www.aepd.es/"><i class="bi bi-link-45deg"></i> Agencia Espanyola Protecció Dades</a></li>
+                            <li class="mb-2"><a href="https://www.ub.edu/comissiobioetica/es"><i class="bi bi-link-45deg"></i> Comissió de Bioética de la UB</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Centre -->
+            <div class="col-md-9 mt-4">
+                <section id="resum" class="mb-5">
+                    <div class="card info-card">
+                        <div class="card-body">
+                            <h2><i class="bi bi-question-circle"></i> Que hi trobaràs en aquesta secció?</h2>
+                            <p>Trobaràs tota la documentació que hi necessitaràs per què els participants puguin participar en la teva recerca.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Secció Full informatiu -->
+                <section id="informatiu" class="mb-5">
+                    <div class="card info-card">
+                        <div class="card-body">
+                            <h2><i class="bi bi-file-text-fill"></i> Full informatiu</h2>
+                            <p>L'objectiu del full informatiu és garantir que tots els usuaris disposin de tota la informació necessària de la recerca i puguin escollir lliurement si volen participar.</p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card mb-3">
+                                        <div class="card-header bg-info text-white">
+                                            <i class="bi bi-card-checklist"></i> Contingut necessari
+                                        </div>
+                                        <div class="card-body">
+                                            <ul>
+                                                <li>Informació bàsica (Nom de la recerca, contacte ...)</li>
+                                                <li>Explicar que és totalment voluntari</li>
+                                                <li>Explicació de l'objectiu de la recerca i com ho assoliran (Quines dades necessiten)</li>
+                                                <li>Procés de participació</li>
+                                                <li>Beneficis</li>
+                                                <li>Gestionament el tractament de dades</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alert alert-warning mt-3">
+                                <i class="bi bi-exclamation-triangle-fill"></i> En el full informatiu la informació ha d'estar redactada en un llenguatge clar i accessible, adaptat a l'edat i nivell de comprensió dels participants.
+                            </div>
+                            <p>Tens un model disponible de full informatiu per descarregar, el tens en diferents formats, escull el millor per tu.</p>
+                            <a href="doc/full_informatiu.docx" class="btn w-100 mb-1" style="background-color: #66b2ff" download="full_informatiu.docx">
+                                <i class="bi bi-download"></i> Full Informatiu (DOCX)
+                            </a>
+                            <a href="doc/full_informatiu.pdf" class="btn w-100 mb-1" style="background-color: #007bff" download="full_informatiu.pdf">
+                                <i class="bi bi-download"></i> Full Informatiu (PDF)
+                            </a>
+                            <a href="doc/full_informatiu.odt" class="btn w-100" style="background-color: #002147; color: white;" download="full_informatiu.odt">
+                                <i class="bi bi-download"></i> Full Informatiu (ODT)
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Secció Consentiment informat i explícit -->
+                <section id="consentiment-informat" class="mb-5">
+                    <div class="card info-card">
+                        <div class="card-body">
+                            <h2><i class="bi bi-file-earmark-check-fill"></i> Consentiment informat i explícit</h2>
+                            <p>El consentiment informat és l'autorització voluntària que els participants signen per la recollida i tractament de les seves dades personals en una recerca. Signar aquest document implica que s'ha entès completament el full informatiu.</p>
+                            <p>El consentiment explícit no és sempre necessari, ja que és una autorització que fa referència al tractament de dades sensibles. (En cas de no tenir-ne, no es fa servir)</p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card mb-3">
+                                        <div class="card-header bg-info text-white">
+                                            <i class="bi bi-card-checklist"></i> Contingut del consentiment
+                                        </div>
+                                        <div class="card-body">
+                                            <ul>
+                                                <li>Escrit en primera persona afirmant que ha entès tot el full informatiu</li>
+                                                <li>L'ha de signar el participant i el/la investigador/a</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Tens un model disponible de consentiment informat i consentiment explícit per descarregar, els tens en diferents formats, escull el millor per tu.</p>
+                            <div class="d-flex mb-3">
+                                <a href="doc/consentiment_informat.docx" class="btn w-50 me-1" style="background-color: #66b2ff" download="consentiment_informat.docx">
+                                    <i class="bi bi-download"></i>Consentiment Informat (DOCX)
+                                </a>
+                                <a href="doc/consentiment_informat.pdf" class="btn w-50 me-1" style="background-color: #007bff" download="consentiment_informat.pdf">
+                                    <i class="bi bi-download"></i> Consentiment Informat (PDF)
+                                </a>
+                                <a href="doc/consentiment_informat.odt" class="btn w-50" style="background-color: #002147; color: white;" download="consentiment_informat.odt">
+                                    <i class="bi bi-download"></i> Consentiment Informat (ODT)
+                                </a>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <a href="doc/consentiment_explicit.docx" class="btn w-50 me-1" style="background-color: #66b2ff" download="consentiment_explicit.docx">
+                                    <i class="bi bi-download"></i>Consentiment Explícit (DOCX)
+                                </a>
+                                <a href="doc/consentiment_explicit.pdf" class="btn w-50 me-1" style="background-color: #007bff" download="consentiment_explicit.pdf">
+                                    <i class="bi bi-download"></i> Consentiment Explícit (PDF)
+                                </a>
+                                <a href="doc/consentiment_explicit.odt" class="btn w-50" style="background-color: #002147; color: white;" download="consentiment_explicit.odt">
+                                    <i class="bi bi-download"></i> Consentiment Explícit (ODT)
+                                </a>
+                            </div>
+                            <div class="section-highlight mt-3">
+                                <h5><i class="bi bi-arrow-repeat"></i> Dret a revocar el consentiment</h5>
+                                <p>Els participants poden retirar el seu consentiment en qualsevol moment sense donar explicacions. Ja no formaran part de la recerca i s'ha d'esborrar tota la informació que es té dels participants que ho sol·liciten.</p>
+                            </div>
+
+                            <div class="alert alert-warning mt-3">
+                                El dret a revocar és un requisit fonamental del Reglament General de Protecció de Dades (RGPD).
+                            </div>
+                            <p>Tens un model disponible del dret a revocar, escull el millor per tu.</p>
+                            <a href="doc/revocacio.docx" class="btn w-100 mb-1" style="background-color: #66b2ff" download="revocacio.docx">
+                                <i class="bi bi-download"></i> Dret a revocar (DOCX)
+                            </a>
+                            <a href="doc/revocacio.pdf" class="btn w-100 mb-1" style="background-color: #007bff"download="revocacio.pdf">
+                                <i class="bi bi-download"></i> Dret a revocar (PDF)
+                            </a>
+                            <a href="doc/revocacio.odt" class="btn w-100" style="background-color: #002147; color: white;" download="revocacio.odt">
+                                <i class="bi bi-download"></i> Dret a revocar (ODT)
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Nota legal -->
+                <div class="alert alert-info mt-4">
+                    <i class="bi bi-info-circle"></i> <strong>Nota:</strong> Aquests models són plantilles genèriques. S'han d'adaptar segons les necessitats específiques de la teva recerca.
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
