@@ -142,7 +142,7 @@
                         <div class="card-body">
                             <h2><i class="bi bi-question-circle"></i> A qui va dirigit?</h2>
                             <p>Aquesta web està pensada per què tu com a investigador, puguis fer la teva recerca amb usuaris i/o les seves dades personals seguint bones pràctiques en la gestió de dades i privacitat.</p>
-                            <p>Si estàs dins del col·lectiu de la Universitat de Barcelona, pots seguir <a href="doc/Memoria-Petita Recerca.pdf" target="_blank">aquesta guia</a> detallada per presentar la teva recerca a la Comissió de Bioètica.</p>
+                            <p>Si estàs dins del col·lectiu de la Universitat de Barcelona (UB), pots seguir <a href="doc/RecercadorsUB.pdf" target="_blank">aquesta guia</a> detallada per recercadors de la UB per presentar la teva recerca a la Comissió de Bioètica.</p>
                         </div>
                     </div>
                 </section>
@@ -243,31 +243,32 @@
                         <div class="modal-body">
                             <div class="container bg-white p-4 rounded shadow-sm">
                                 <div class="step" id="step1">
-                                    <p class="fw fs-5">Independentment de quin tipus de dades tenim, s'ha de fer un <strong>pla de dades</strong></p>
+                                    <p class="fw fs-5">Independentment de quin tipus de dades tenim, s'ha de fer un <strong><a href="pladades.html#pla">pla de dades</a></strong></p>
                                     <p class="fw-bold fs-5">1. Tens dades personals?</p>
                                     <button class="btn btn-outline-primary btn-option" onclick="goToStep('step1', 'step2')">Sí</button>
                                     <button class="btn btn-outline-primary btn-option" onclick="goToStep('step1', 'step7')">No</button>
                                 </div>
 
                                 <div class="step hidden" id="step2">
-                                    <p class="fw fs-5">S'ha de fer el <strong>full informatiu</strong></p>
+                                    <p class="fw fs-5">S'ha de fer el <strong><a href="consentiment.html#informatiu">full informatiu</a></strong></p>
                                     <p class="fw-bold fs-5">2. Com es recullen les dades?</p>
                                     <button class="btn btn-outline-primary btn-option" onclick="goToStep('step2', 'step3')">No anonimitzades</button>
                                     <button class="btn btn-outline-primary btn-option" onclick="goToStep('step2', 'step6')">Anonimitzades 100%</button>
                                 </div>
 
                                 <div class="step hidden" id="step3">
-                                    <p class="fw fs-5">S'ha de fer el <strong>consentiment informat</strong></p>
+                                    <p class="fw fs-5">S'ha de fer el <strong><a href="consentiment.html#consentiment-informat">consentiment informat</a></strong></p>
                                     <p class="fw-bold fs-5">3. Tens dades sensibles?</p>
                                     <button class="btn btn-outline-primary btn-option" onclick="goToStep('step3', 'step4')">Sí</button>
                                     <button class="btn btn-outline-primary btn-option" onclick="goToStep('step3', 'step5')">No</button>
                                 </div>
 
                                 <div class="step hidden" id="step4">
-                                    <p class="fw fs-5">S'ha d'afegir el <strong>consentiment explícit</strong></p>
+                                    <p class="fw fs-5">S'ha d'afegir el <strong><a href="consentiment.html#consentiment-informat">consentiment explícit</a></strong></p>
                                     <p class="fw-bold fs-5 text-success">Ja pots fer la recerca.</p>
                                     <div class="alert alert-success mt-3">
                                     <i class="bi bi-check-circle-fill"></i> Tots els requisits estan complerts. Pots procedir amb la recerca.
+                                    <p><strong>Documentació necessaria: Pla de dades, Full informatiu, Consentiment informat i Consentiment explícit</strong></p>
                                     </div>
                                 </div>
 
@@ -275,6 +276,7 @@
                                     <p class="fw-bold fs-5 text-success">Ja pots fer la recerca.</p>
                                     <div class="alert alert-success mt-3">
                                     <i class="bi bi-check-circle-fill"></i> Tots els requisits estan complerts. Pots procedir amb la recerca.
+                                    <p><strong>Documentació necessaria: Pla de dades, Full informatiu i Consentiment informat</strong></p>
                                     </div>
                                 </div>
 
@@ -282,14 +284,15 @@
                                     <p class="fw-bold fs-5 text-success">No aplica RGPD. Ja pots fer la recerca.</p>
                                     <div class="alert alert-success mt-3">
                                     <i class="bi bi-check-circle-fill"></i> Com que les dades estan completament anonimitzades, no s'aplica el RGPD. Pots procedir amb la recerca.
+                                    <p><strong>Documentació necessaria: Pla de dades i Full informatiu</strong></p>
                                     </div>
                                 </div>
 
                                 <div class="step hidden" id="step7">
-                                    <p class="fw-bold fs-5 text-success">No tens dades personals.</p>
-                                    <p>No aplica RGPD. Ja pots fer la recerca.</p>
+                                    <p class="fw-bold fs-5 text-success">No aplica RGPD. Ja pots fer la recerca.</p>
                                     <div class="alert alert-success mt-3">
                                     <i class="bi bi-check-circle-fill"></i> Com que no hi ha dades personals, no s'aplica el RGPD. Pots procedir amb la recerca.
+                                    <p><strong>Documentació necessaria: Pla de dades</strong></p>
                                     </div>
                                 </div>
 
