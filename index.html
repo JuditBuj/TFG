@@ -40,7 +40,7 @@
     <!-- Barra de navegació -->
     <nav class="navbar navbar navbar-dark bg-primary">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand text-wrap" href="#" style="white-space: normal;">
                 <i class="bi bi-card-list"></i> Guia documental per recerques amb dades personals
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -163,36 +163,38 @@
                             <p>Les dades personals es classifiquen segons la seva capacitat d'identificar persones i la sensibilitat de la informació.</p>
 
                             <!-- Taula amb exemples -->
-                            <table class="table">
-                                <thead class="table table-info">
-                                    <tr>
-                                        <th>Tipus de dades</th>
-                                        <th>Exemples</th>
-                                        <th>Nivell de protecció</th>
-                                        <th>Requisits legals</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Bàsiques</td>
-                                        <td>Nom, edat, mail</td>
-                                        <td><span class="badge bg-primary">Normal</span></td>
-                                        <td>Consentiment informat</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sensibles</td>
-                                        <td>Religió, ideologia política, imatge propia</td>
-                                        <td><span class="badge bg-danger">Alt</span></td>
-                                        <td>Consentiment informat + consentiment explícit</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Anonimitzades</td>
-                                        <td>Enquestes sense identificadors, estadístiques agregades (Percentatges %)</td>
-                                        <td><span class="badge bg-success">Mínim</span></td>
-                                        <td>No requereix consentiment (No aplica <abbr title="Reglament General de Protecció de Dades">RGPD</abbr>)</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead class="table-info">
+                                        <tr>
+                                            <th>Tipus de dades</th>
+                                            <th>Exemples</th>
+                                            <th>Nivell de protecció</th>
+                                            <th>Requisits legals</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Bàsiques</td>
+                                            <td>Nom, edat, mail</td>
+                                            <td><span class="badge bg-primary">Normal</span></td>
+                                            <td>Consentiment informat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sensibles</td>
+                                            <td>Religió, ideologia política, imatge propia</td>
+                                            <td><span class="badge bg-danger">Alt</span></td>
+                                            <td>Consentiment informat + consentiment explícit</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Anonimitzades</td>
+                                            <td>Enquestes sense identificadors, estadístiques agregades (Percentatges %)</td>
+                                            <td><span class="badge bg-success">Mínim</span></td>
+                                            <td>No requereix consentiment (No aplica <abbr title="Reglament General de Protecció de Dades">RGPD</abbr>)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                             <p class="small">Les dades <strong>bàsiques</strong> identifiquen directament, les <strong>sensibles</strong> requereixen protecció especial per risc de discriminació, i les <strong>anonimitzades</strong> no permeten identificar individus, per la qual cosa no s'apliquen les mateixes restriccions legals.</p>
                         </div>
                     </div>
